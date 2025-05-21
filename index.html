@@ -185,7 +185,7 @@
   <div class="container">
     <div class="section-header">
       <h2>Media Highlights</h2>
-      <div class="accent-line"></div>
+      <div class="accent-line" style="margin-left: -20px;"></div>
       <p class="section-subtitle">Explore thought leadership, key events, and strategic moments from Dr. Mathe's journey.</p>
     </div>
 
@@ -469,200 +469,554 @@
   <div class="container">
     <div class="section-header">
       <h2>Video Features</h2>
-      <div class="accent-line"></div>
+      <div class="accent-line" style="margin-left: 0;"></div>
       <p class="section-subtitle">Key speeches, interviews, and insights from Dr. Mathe's public journey.</p>
     </div>
 
-    <div class="videos-grid">
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/2tq2AW5fcSE" title="Video 1" allowfullscreen></iframe>
+    <div class="immersive-video-gallery">
+      <div class="video-backdrop"></div>
+
+      <!-- MAIN FEATURED VIDEO -->
+      <div class="video-carousel">
+        <div class="video-card featured">
+          <div class="video-card-inner">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/2tq2AW5fcSE" title="Dr Audrin Mathe on Supreme Court ruling" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-meta">
+                <span class="video-tag">NBC Interview</span>
+                <span class="video-duration">5:32</span>
+              </div>
+              <h3>Dr Audrin Mathe on Supreme Court ruling of gay couple</h3>
+              <p class="video-excerpt">Critical analysis of the landmark Supreme Court decision and its implications for civil liberties.</p>
+              <div class="video-actions">
+                <a href="https://www.youtube.com/watch?v=2tq2AW5fcSE" target="_blank" class="video-link">
+                  <span class="play-icon">
+                    ▶
+                  </span>
+                  <span>Watch on YouTube</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="video-info">
-          <h3>Dr Audrin Mathe on Supreme Court ruling of gay couple - nbc</h3>
-          <a href="https://www.youtube.com/watch?v=2tq2AW5fcSE" target="_blank" class="video-link">
-            <i class="fab fa-youtube"></i> Watch on YouTube
-          </a>
+
+        <!-- VIDEO THUMBNAILS LIST -->
+        <div class="video-thumbnails">
+          <!-- Each thumbnail now contains an iframe in a hidden state -->
+          <div class="video-thumbnail active">
+            <iframe src="https://www.youtube.com/embed/2tq2AW5fcSE" title="Supreme Court Ruling" allowfullscreen style="display:none;"></iframe>
+            <div class="thumbnail-preview">
+              <img src="https://img.youtube.com/vi/2tq2AW5fcSE/mqdefault.jpg" alt="Thumbnail" />
+              <div class="thumbnail-info"><h4>Supreme Court Ruling</h4></div>
+            </div>
+          </div>
+
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/kimKxYWrcEs" title="Journalistic Integrity" allowfullscreen style="display:none;"></iframe>
+            <div class="thumbnail-preview">
+              <img src="https://img.youtube.com/vi/kimKxYWrcEs/mqdefault.jpg" alt="Thumbnail" />
+              <div class="thumbnail-info"><h4>Journalistic Integrity</h4></div>
+            </div>
+          </div>
+
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/u9BbL1Ov6-Y" title="Heroes Commemoration" allowfullscreen style="display:none;"></iframe>
+            <div class="thumbnail-preview">
+              <img src="https://img.youtube.com/vi/u9BbL1Ov6-Y/mqdefault.jpg" alt="Thumbnail" />
+              <div class="thumbnail-info"><h4>Heroes Commemoration</h4></div>
+            </div>
+          </div>
+
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/dUYSlW1ahqs" title="Presidential Funeral" allowfullscreen style="display:none;"></iframe>
+            <div class="thumbnail-preview">
+              <img src="https://img.youtube.com/vi/dUYSlW1ahqs/mqdefault.jpg" alt="Thumbnail" />
+              <div class="thumbnail-info"><h4>Presidential Funeral</h4></div>
+            </div>
+          </div>
+
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/tu4znQlvDjw" title="Memorial Reflections" allowfullscreen style="display:none;"></iframe>
+            <div class="thumbnail-preview">
+              <img src="https://img.youtube.com/vi/tu4znQlvDjw/mqdefault.jpg" alt="Thumbnail" />
+              <div class="thumbnail-info"><h4>Memorial Reflections</h4></div>
+            </div>
+          </div>
+
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/sTx-uC2yr8k" title="Media Barometer Report" allowfullscreen style="display:none;"></iframe>
+            <div class="thumbnail-preview">
+              <img src="https://img.youtube.com/vi/sTx-uC2yr8k/mqdefault.jpg" alt="Thumbnail" />
+              <div class="thumbnail-info"><h4>Media Barometer Report</h4></div>
+            </div>
+          </div>
+
+          <!-- Optional: Carousel navigation -->
+          <div class="carousel-controls">
+            <button class="carousel-control prev">←</button>
+            <button class="carousel-control next">→</button>
+          </div>
         </div>
       </div>
 
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/kimKxYWrcEs" title="Video 2" allowfullscreen></iframe>
-        </div>
-        <div class="video-info">
-          <h3>Mathe urges journalists not to support specific candidates or political parties</h3>
-          <a href="https://www.youtube.com/watch?v=kimKxYWrcEs" target="_blank" class="video-link">
-            <i class="fab fa-youtube"></i> Watch on YouTube
-          </a>
-        </div>
+      <!-- Categories -->
+      <div class="video-categories">
+        <button class="category-btn active" data-category="all">All Videos</button>
+        <button class="category-btn" data-category="interviews">Interviews</button>
+        <button class="category-btn" data-category="speeches">Speeches</button>
+        <button class="category-btn" data-category="commentary">Commentary</button>
       </div>
 
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/u9BbL1Ov6-Y" title="Video 3" allowfullscreen></iframe>
+      <!-- Statistics -->
+      <div class="video-stats">
+        <div class="stat-item">
+          <span class="stat-number">24</span>
+          <span class="stat-label">Public Appearances</span>
         </div>
-        <div class="video-info">
-          <h3>INTERVIEW | Heroes commemoration to be held in Mariental - nbc</h3>
-          <a href="https://www.youtube.com/watch?v=u9BbL1Ov6-Y" target="_blank" class="video-link">
-            <i class="fab fa-youtube"></i> Watch on YouTube
-          </a>
+        <div class="stat-item">
+          <span class="stat-number">12</span>
+          <span class="stat-label">TV Interviews</span>
         </div>
-      </div>
-
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/dUYSlW1ahqs" title="Video 4" allowfullscreen></iframe>
-        </div>
-        <div class="video-info">
-          <h3>Funeral arrangements for President Hage Geingob: Sophie Mokoena</h3>
-          <a href="https://www.youtube.com/watch?v=dUYSlW1ahqs" target="_blank" class="video-link">
-            <i class="fab fa-youtube"></i> Watch on YouTube
-          </a>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/tu4znQlvDjw" title="Video 5" allowfullscreen></iframe>
-        </div>
-        <div class="video-info">
-          <h3>IN MEMORY | Norah Appolus shares her encounters with Dr. Geingob - nbc</h3>
-          <a href="https://www.youtube.com/watch?v=tu4znQlvDjw" target="_blank" class="video-link">
-            <i class="fab fa-youtube"></i> Watch on YouTube
-          </a>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/sTx-uC2yr8k" title="Video 6" allowfullscreen></iframe>
-        </div>
-        <div class="video-info">
-          <h3>Statement on the African Media Barometer Report by MICT</h3>
-          <a href="https://www.youtube.com/watch?v=sTx-uC2yr8k" target="_blank" class="video-link">
-            <i class="fab fa-youtube"></i> Watch on YouTube
-          </a>
+        <div class="stat-item">
+          <span class="stat-number">8</span>
+          <span class="stat-label">Policy Speeches</span>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <section class="publications-section" id="publications" data-section="publications">
   <div class="container">
     <div class="section-header">
       <h2>Publications</h2>
-      <div class="accent-line"></div>
+      <div class="accent-line" style="margin-left: -20px;"></div>
       <p class="section-subtitle">Dive into Dr. Mathe's thought-provoking work on governance, law, and policy.</p>
     </div>
+    
+    <div class="publications-wrapper">
+      <div class="publication-grid">
+        <a class="publication-card" href="https://audrinmathe.com/downloads/Thirty%20Years%20on%20Accountable%20Govt.pdf" download>
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="text-content">
+              <h3>Thirty Years on Accountable Govt</h3>
+              <div class="pub-meta">
+                <span class="pub-type">Research Paper</span>
+                <span class="pub-date">2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-indicator">
+            <span>Download</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </a>
+        
+        <a class="publication-card" href="https://audrinmathe.com/downloads/2023%20Parliamentary%20Rhetoric%20and%20Public%20Competence.pdf" download>
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="text-content">
+              <h3>Parliamentary Rhetoric and Public Competence</h3>
+              <div class="pub-meta">
+                <span class="pub-type">Policy Analysis</span>
+                <span class="pub-date">2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-indicator">
+            <span>Download</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </a>
+        
+        <a class="publication-card" href="https://audrinmathe.com/downloads/Accountability%20of%20Members%20of%20Parliament.pdf" download>
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="text-content">
+              <h3>Accountability of Members of Parliament</h3>
+              <div class="pub-meta">
+                <span class="pub-type">Research Paper</span>
+                <span class="pub-date">2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-indicator">
+            <span>Download</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </a>
+        
+        <a class="publication-card" href="https://audrinmathe.com/downloads/An%20History%20of%20Presidential%20Immunity%20in%20Namibia.pdf" download>
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="text-content">
+              <h3>An History of Presidential Immunity in Namibia</h3>
+              <div class="pub-meta">
+                <span class="pub-type">Case Study</span>
+                <span class="pub-date">2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-indicator">
+            <span>Download</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </a>
+        
+        <a class="publication-card" href="https://audrinmathe.com/downloads/China-Namibia%20Dialogue.pdf" download>
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="text-content">
+              <h3>China–Namibia Dialogue</h3>
+              <div class="pub-meta">
+                <span class="pub-type">Policy Brief</span>
+                <span class="pub-date">2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-indicator">
+            <span>Download</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </a>
+        
+        <a class="publication-card" href="https://audrinmathe.com/downloads/Hamutenya%27s%20Constitutioal%20Anecodots.pdf" download>
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="text-content">
+              <h3>Hamutenya's Constitutional Anecdots</h3>
+              <div class="pub-meta">
+                <span class="pub-type">Historical Analysis</span>
+                <span class="pub-date">2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-indicator">
+            <span>Download</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </a>
+        
+        <a class="publication-card" href="https://audrinmathe.com/downloads/Timeless%20Welcoming%20Remarks.pdf" download>
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="text-content">
+              <h3>Timeless Welcoming Remarks</h3>
+              <div class="pub-meta">
+                <span class="pub-type">Speech</span>
+                <span class="pub-date">2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-indicator">
+            <span>Download</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </a>
 
-    <div class="publication-grid">
-      <a class="publication-card" href="https://audrinmathe.com/downloads/Thirty%20Years%20on%20Accountable%20Govt.pdf" download>
-        <i class="fas fa-file-pdf icon"></i>
-        <span>Thirty Years on Accountable Govt</span>
-      </a>
+                <a class="publication-card" href="https://audrinmathe.com/downloads/Timeless%20Welcoming%20Remarks.pdf" download>
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="text-content">
+              <h3>Timeless Welcoming Remarks</h3>
+              <div class="pub-meta">
+                <span class="pub-type">Speech</span>
+                <span class="pub-date">2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-indicator">
+            <span>Download</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </a>
 
-      <a class="publication-card" href="https://audrinmathe.com/downloads/2023%20Parliamentary%20Rhetoric%20and%20Public%20Competence.pdf" download>
-        <i class="fas fa-file-pdf icon"></i>
-        <span>2023 Parliamentary Rhetoric and Public Competence</span>
-      </a>
-
-      <a class="publication-card" href="https://audrinmathe.com/downloads/Accountability%20of%20Members%20of%20Parliament.pdf" download>
-        <i class="fas fa-file-pdf icon"></i>
-        <span>Accountability of Members of Parliament</span>
-      </a>
-
-      <a class="publication-card" href="https://audrinmathe.com/downloads/An%20History%20of%20Presidential%20Immunity%20in%20Namibia.pdf" download>
-        <i class="fas fa-file-pdf icon"></i>
-        <span>An History of Presidential Immunity in Namibia</span>
-      </a>
-
-      <a class="publication-card" href="https://audrinmathe.com/downloads/China-Namibia%20Dialogue.pdf" download>
-        <i class="fas fa-file-pdf icon"></i>
-        <span>China–Namibia Dialogue</span>
-      </a>
-
-      <a class="publication-card" href="https://audrinmathe.com/downloads/Hamutenya%27s%20Constitutioal%20Anecodots.pdf" download>
-        <i class="fas fa-file-pdf icon"></i>
-        <span>Hamutenya's Constitutional Anecdots</span>
-      </a>
-
-      <a class="publication-card" href="https://audrinmathe.com/downloads/Timeless%20Welcoming%20Remarks.pdf" download>
-        <i class="fas fa-file-pdf icon"></i>
-        <span>Timeless Welcoming Remarks</span>
-      </a>
+                <a class="publication-card" href="https://audrinmathe.com/downloads/Timeless%20Welcoming%20Remarks.pdf" download>
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="text-content">
+              <h3>Timeless Welcoming Remarks</h3>
+              <div class="pub-meta">
+                <span class="pub-type">Speech</span>
+                <span class="pub-date">2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="download-indicator">
+            <span>Download</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </a>
+      </div>
+      
+      <div class="publications-decoration">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+      </div>
     </div>
   </div>
 </section>
-
 
 <section class="gallery-section" id="gallery" data-section="gallery">
   <div class="container">
     <div class="section-header">
       <h2>Gallery</h2>
-      <div class="accent-line"></div>
-      <p class="section-subtitle">Moments from Dr. Mathe’s global, academic, and leadership engagements.</p>
+      <div class="accent-line" style="margin-left: -20px;"></div>
+      <p class="section-subtitle">Moments from Dr. Mathe's global, academic, and leadership engagements.</p>
+    </div>
+    
+    <div class="gallery-controls">
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="academic">Academic</button>
+        <button class="filter-btn" data-filter="leadership">Leadership</button>
+        <button class="filter-btn" data-filter="global">Global</button>
+      </div>
+      <div class="gallery-view-toggle">
+        <button class="view-btn active" data-view="grid">
+          <i class="fas fa-th"></i>
+        </button>
+        <button class="view-btn" data-view="masonry">
+          <i class="fas fa-columns"></i>
+        </button>
+      </div>
     </div>
 
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="./images/about.png" alt="Hong Kong view" onclick="openLightbox(this)"></div>
-      <div class="gallery-item"><img src="./images/about.png" alt="Library with Mandela book" onclick="openLightbox(this)"></div>
-      <div class="gallery-item"><img src="./images/about.png" alt="Presentation" onclick="openLightbox(this)"></div>
-      <div class="gallery-item"><img src="./images/about.png" alt="Handshake with President Geingob" onclick="openLightbox(this)"></div>
-      <div class="gallery-item"><img src="./images/about.png" alt="Speech podium" onclick="openLightbox(this)"></div>
-      <div class="gallery-item"><img src="./images/about.png" alt="Panel discussion" onclick="openLightbox(this)"></div>
+    <div class="gallery-wrapper" data-view-mode="grid">
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="global academic">
+          <div class="item-inner">
+            <div class="image-container">
+              <img src="./images/about.png" alt="Hong Kong view">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="item-info">
+              <h3>International Conference</h3>
+              <p>Hong Kong, 2023</p>
+              <div class="item-meta">
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Hong Kong</span>
+                <span class="category">Global</span>
+              </div>
+            </div>
+            <button class="expand-btn" aria-label="Expand image">
+              <i class="fas fa-expand"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="academic">
+          <div class="item-inner">
+            <div class="image-container">
+              <img src="./images/about.png" alt="Library with Mandela book">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="item-info">
+              <h3>Research Archive</h3>
+              <p>National Library, 2022</p>
+              <div class="item-meta">
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Windhoek</span>
+                <span class="category">Academic</span>
+              </div>
+            </div>
+            <button class="expand-btn" aria-label="Expand image">
+              <i class="fas fa-expand"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="gallery-item featured" data-category="leadership">
+          <div class="item-inner">
+            <div class="image-container">
+              <img src="./images/about.png" alt="Presentation">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="item-info">
+              <h3>Keynote Address</h3>
+              <p>Policy Conference, 2023</p>
+              <div class="item-meta">
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Johannesburg</span>
+                <span class="category">Leadership</span>
+              </div>
+            </div>
+            <button class="expand-btn" aria-label="Expand image">
+              <i class="fas fa-expand"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="leadership global">
+          <div class="item-inner">
+            <div class="image-container">
+              <img src="./images/about.png" alt="Handshake with President">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="item-info">
+              <h3>Diplomatic Meeting</h3>
+              <p>Presidential Summit, 2022</p>
+              <div class="item-meta">
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Windhoek</span>
+                <span class="category">Leadership</span>
+              </div>
+            </div>
+            <button class="expand-btn" aria-label="Expand image">
+              <i class="fas fa-expand"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="academic leadership">
+          <div class="item-inner">
+            <div class="image-container">
+              <img src="./images/about.png" alt="Speech podium">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="item-info">
+              <h3>Governance Forum</h3>
+              <p>UN Symposium, 2023</p>
+              <div class="item-meta">
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Geneva</span>
+                <span class="category">Academic</span>
+              </div>
+            </div>
+            <button class="expand-btn" aria-label="Expand image">
+              <i class="fas fa-expand"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="global academic">
+          <div class="item-inner">
+            <div class="image-container">
+              <img src="./images/about.png" alt="Panel discussion">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="item-info">
+              <h3>Panel Discussion</h3>
+              <p>International Law Symposium, 2022</p>
+              <div class="item-meta">
+                <span class="location"><i class="fas fa-map-marker-alt"></i> London</span>
+                <span class="category">Global</span>
+              </div>
+            </div>
+            <button class="expand-btn" aria-label="Expand image">
+              <i class="fas fa-expand"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <!-- Lightbox Modal -->
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img" src="" alt="Enlarged image">
+  
+  <!-- Gallery Scroll Indicator -->
+  <div class="gallery-scroll-indicator">
+    <div class="scroll-track">
+      <div class="scroll-thumb"></div>
+    </div>
+  </div>
+  
+  <!-- Advanced Lightbox -->
+  <div class="lightbox-container">
+    <div class="lightbox-content">
+      <div class="lightbox-header">
+        <h3 class="lightbox-title">Image Title</h3>
+        <div class="lightbox-controls">
+          <button class="lightbox-btn prev-btn" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="lightbox-btn next-btn" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <button class="lightbox-btn close-btn" aria-label="Close lightbox">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <div class="lightbox-image-container">
+        <img src="" alt="" class="lightbox-image">
+      </div>
+      <div class="lightbox-footer">
+        <div class="lightbox-description"></div>
+        <div class="lightbox-counter">
+          <span class="current">1</span> / <span class="total">6</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="contact-section" id="contact" data-section="contact">
-
-          <div class="section-header">
-    <h2>Let’s Talk</h2>
+  <div class="section-header">
+    <h2>Let's Talk</h2>
     <!-- <div class="accent-line" style="margin-left: 30px;"></div> -->
     <p class="section-subtitle">
       Whether you're looking to collaborate, consult, or connect — Dr. Mathe is open to meaningful dialogue and impactful conversations.
     </p>
   </div>
   <div class="container contact-wrapper">
-
     <!-- Left side with image and contact info -->
     <div class="contact-left">
       <div class="contact-image-frame">
         <img src="./images/about1.png" alt="Dr. Audrin Mathe" />
+        <div class="image-overlay"></div>
       </div>
+      <ul class="contact-details">
+        <li><i class="fas fa-envelope"></i> audrin@mathe.gov.na</li>
+        <li><i class="fas fa-phone"></i> +264 81 234 5678</li>
+      </ul>
     </div>
-
+    
     <!-- Right side with contact form -->
     <div class="contact-right">
+      <div class="form-header">
+        <span class="form-icon"><i class="fas fa-paper-plane"></i></span>
+        <h3>Send a Message</h3>
+      </div>
       <form class="contact-form" method="POST" action="#">
-        <div class="form-row">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Email Address" required>
+        <div class="input-group">
+          <input type="text" id="name" required>
+          <label for="name">Your Name</label>
         </div>
-        <input type="text" placeholder="Subject" required>
-        <textarea rows="6" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-
- <div class="contact-text">
-   
-        <p>Whether you're looking to collaborate, consult, or connect — Dr. Mathe is open to meaningful dialogue and impactful conversations.</p>
-
-        <ul class="contact-details">
-          <li><i class="fas fa-envelope"></i> audrin@mathe.gov.na</li>
-          <li><i class="fas fa-phone"></i> +264 81 234 5678</li>
-        </ul>
-      </div> 
+        <div class="input-group">
+          <input type="email" id="email" required>
+          <label for="email">Email Address</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="subject" required>
+          <label for="subject">Subject</label>
+        </div>
+        <div class="input-group">
+          <textarea id="message" rows="5" required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <span>Send Message</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
       </form>
-
     </div>
-
   </div>
 </section>
 
@@ -881,6 +1235,73 @@ function updateActiveNav() {
 window.addEventListener('scroll', updateActiveNav);
 
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  const videoThumbnails = document.querySelectorAll('.video-thumbnail');
+  const featuredVideoEmbed = document.querySelector('.featured .video-embed iframe');
+  const featuredVideoTitle = document.querySelector('.featured .video-info h3');
+  const featuredVideoTag = document.querySelector('.featured .video-meta .video-tag');
+  const featuredVideoExcerpt = document.querySelector('.featured .video-excerpt');
+  const featuredVideoDuration = document.querySelector('.featured .video-meta .video-duration');
+  const featuredVideoLink = document.querySelector('.featured .video-actions .video-link');
+  
+  videoThumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', function() {
+      // Remove active class from all thumbnails
+      videoThumbnails.forEach(t => t.classList.remove('active'));
+      // Add active class to clicked thumbnail
+      this.classList.add('active');
+      
+      // Update the featured video
+      featuredVideoEmbed.src = this.dataset.videoUrl;
+      featuredVideoTitle.textContent = this.dataset.videoTitle;
+      featuredVideoTag.textContent = this.dataset.videoTag;
+      featuredVideoExcerpt.textContent = this.dataset.videoExcerpt;
+      featuredVideoDuration.textContent = this.dataset.videoDuration;
+      featuredVideoLink.href = this.dataset.youtubeLink;
+    });
+  });
+  
+  // Carousel navigation
+  const carouselNext = document.querySelector('.carousel-control.next');
+  const carouselPrev = document.querySelector('.carousel-control.prev');
+  
+  carouselNext.addEventListener('click', function() {
+    const activeThumb = document.querySelector('.video-thumbnail.active');
+    const nextThumb = activeThumb.nextElementSibling;
+    if (nextThumb && nextThumb.classList.contains('video-thumbnail')) {
+      nextThumb.click();
+    } else {
+      videoThumbnails[0].click();
+    }
+  });
+  
+  carouselPrev.addEventListener('click', function() {
+    const activeThumb = document.querySelector('.video-thumbnail.active');
+    const prevThumb = activeThumb.previousElementSibling;
+    if (prevThumb && prevThumb.classList.contains('video-thumbnail')) {
+      prevThumb.click();
+    } else {
+      videoThumbnails[videoThumbnails.length - 1].click();
+    }
+  });
+  
+  // Category filtering
+  const categoryBtns = document.querySelectorAll('.category-btn');
+  
+  categoryBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Remove active class from all category buttons
+      categoryBtns.forEach(b => b.classList.remove('active'));
+      // Add active class to clicked button
+      this.classList.add('active');
+      
+      // Filter videos based on category
+      const category = this.dataset.category;
+      // Implement filtering logic here
+    });
+  });
+});
   </script>
 </body>
 </html>
