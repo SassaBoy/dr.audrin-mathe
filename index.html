@@ -24,10 +24,10 @@
         <ul>
         <li><a href="#home" class="nav-link">HOME</a></li>
 <li><a href="#about" class="nav-link">ABOUT</a></li>
-<li><a href="#media" class="nav-link">MEDIA</a></li>
-<li><a href="#videos" class="nav-link">VIDEOS</a></li>
-<li><a href="#publications" class="nav-link">PUBLICATIONS</a></li>
-<li><a href="#gallery" class="nav-link">GALLERY</a></li>
+<li><a href="#media-section" class="nav-link">MEDIA</a></li>
+<li><a href="#video-section" class="nav-link">VIDEOS</a></li>
+<li><a href="#publications-section" class="nav-link">PUBLICATIONS</a></li>
+<li><a href="#gallery-section" class="nav-link">GALLERY</a></li>
 <li><a href="#contact" class="nav-link">CONTACT</a></li>
         </ul>
       </nav>
@@ -44,12 +44,12 @@
   <div class="mobile-nav">
     <div class="mobile-nav-close">&times;</div>
     <ul>
-  <li><a href="#home" class="nav-link">HOME</a></li>
+  <li><a href="#home" class="nav-link active">HOME</a></li>
 <li><a href="#about" class="nav-link">ABOUT</a></li>
-<li><a href="#media" class="nav-link">MEDIA</a></li>
+<li><a href="#media-section" class="nav-link">MEDIA</a></li>
 <li><a href="#videos" class="nav-link">VIDEOS</a></li>
-<li><a href="#publications" class="nav-link">PUBLICATIONS</a></li>
-<li><a href="#gallery" class="nav-link">GALLERY</a></li>
+<li><a href="#publications-section" class="nav-link">PUBLICATIONS</a></li>
+<li><a href="#gallery-section" class="nav-link">GALLERY</a></li>
 <li><a href="#contact" class="nav-link">CONTACT</a></li>
     </ul>
   </div>
@@ -57,7 +57,7 @@
   <!-- Hero Section -->
 <section class="hero" id="home" data-section="home">
     <div class="container">
-      <div class="hero-content">
+      <div class="hero-content" style="margin-top: -60px;">
         <div class="hero-text reveal-left">
           <h2 style="margin-left: 6px;">DR. AUDRIN MATHE</h2>
           <div class="accent-line" style="margin-left: 6px;"></div>
@@ -77,21 +77,56 @@
           </div>
         </div>
         
-<div class="hero-image reveal-right">
-  <div class="hero-image-frame angled-frame">
-    <img src="./images/about.png" alt="Dr. Audrin Mathe">
+<div style="position: relative; width: fit-content; margin: 1.5rem auto; transform: translateY(-20px);">
+  <!-- Decorative Circle (top-left, not touching the image) -->
+  <div class="decorative-circle" style="
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border: 10px solid #ff6600;
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+    z-index: 1;
+    opacity: 0.95;
+    pointer-events: none;
+  "></div>
+
+  <!-- Hero Image (slightly lifted, no skew) -->
+  <div class="hero-image-frame" style="position: relative; z-index: 2;">
+    <img src="./images/about2.png" alt="Dr. Audrin Mathe" style="
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transform: none;
+    ">
   </div>
 </div>
 
-
-
-
+</div>
       </div>
     </div>
   </section>
   
   <!-- Credentials Section -->
   <section class="credentials">
+      <!-- Decorative Circle (top-left, not touching the image) -->
+  <div class="decorative-circle" style="
+    position: absolute;
+     width: 190px;
+    height: 190px;
+    border: 10px solid #ff6600;
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+    z-index: 1;
+    opacity: 0.95;
+    pointer-events: none;
+  "></div>
+
     <div class="container">
       <div class="credentials-grid">
         <div class="credential-card reveal-up">
@@ -127,6 +162,20 @@
     </div>
   </section>
 <section class="biography" id="about" data-section="about">
+    <!-- Decorative Circle (top-left, not touching the image) -->
+  <div class="decorative-circle" style="
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border: 10px solid #ff6600;
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+    z-index: 1;
+    opacity: 0.95;
+    pointer-events: none;
+  "></div>
+
   <div class="container">
     <div class="section-header">
       <h2>Biography</h2>
@@ -173,634 +222,331 @@
       
       <div class="biography-profile">
         <div class="profile-image">
-          <img src="./images/about1.png" alt="Dr. Audrin Mathe - Full Body" />
+          <img src="./images/about4.png" alt="Dr. Audrin Mathe - Full Body" />
           <div class="profile-accent"></div>
         </div>
       </div>
     </div>
   </div>
+    <div class="decorative-circle" style="
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border: 10px solid #ff6600;
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+    z-index: 1;
+    opacity: 0.95;
+    pointer-events: none;
+  "></div>
 </section>
 
-<section class="media-section" id="media" data-section="media">
-  <div class="container">
-    <div class="section-header">
-      <h2>Media Highlights</h2>
-      <div class="accent-line" style="margin-left: -20px;"></div>
-      <p class="section-subtitle"  style="color: white">Explore thought leadership, key events, and strategic moments from Dr. Mathe's journey.</p>
-    </div>
+<section class="media-section" id="media-section" data-section="media-section" style="margin-bottom: 60px;"> 
+  <!-- Hero Section with Person -->
+     <!-- Decorative Circle (top-left, not touching the image) -->
+  <div class="decorative-circle" style="
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border: 10px solid #ff6600;
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+    z-index: 1;
+    opacity: 0.95;
+    pointer-events: none;
+  "></div>
 
-    <div class="media-grid">
-    <div class="media-card">
-  <div class="media-img">
-    <img src="./images/media1.png" alt="Child using mobile phone">
-    <div class="media-tag">Cyber</div>
-  </div>
-  <div class="media-info">
-    <h3>Namibia’s cyber strategy focuses on children</h3>
-    <p>Protecting young users with a national approach to online safety.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Aug 2024</span>
-      <a href="https://itweb.africa/article/namibias-cyber-strategy-focuses-on-children/j5alrvQA1AxvpYQk" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card featured">
-  <div class="media-img">
-    <img src="./images/media2.png" alt="Mathe discussing digital strategy">
-    <div class="media-tag">Digitisation</div>
-  </div>
-  <div class="media-info">
-    <h3>N$100 mil digitisation dream gains momentum..</h3>
-    <p>Mathe explains the national vision for digital transformation and investment.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Jan 2024</span>
-      <a href="https://neweralive.na/n100-mil-digitisation-dream-gains-momentum-electronic-ids-in-pipeline/?fbclid=IwAR3jc0FjDi1mzuYq3qwc13-BLa7ZpuziMICzI7302ZHPkOdRZmJp1foV_p4" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media3.png" alt="NBC Board Session">
-    <div class="media-tag">Funding</div>
-  </div>
-  <div class="media-info">
-    <h3>NBC needs to figure out a sustainable funding model</h3>
-    <p>Discussions intensify around policy changes and financing public media.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Dec 2024</span>
-      <a href="https://www.observer24.com.na/tag/nbc-needs-to-figure-out-a-sustainable-funding-model-mathe/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media4.png" alt="Mathe speaking at Digital Government Africa">
-    <div class="media-tag">Cybersecurity</div>
-  </div>
-  <div class="media-info">
-    <h3>Information Ministry vows cyber resilience</h3>
-    <p>Government commits to strengthening national cybersecurity frameworks.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Oct 2023</span>
-      <a href="https://informante.web.na/?p=350069" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media5.png" alt="Namibian digital transformation group photo">
-    <div class="media-tag">Digital</div>
-  </div>
-  <div class="media-info">
-    <h3>Namibia focuses on digital transformation</h3>
-    <p>Cross-sector collaboration pushes forward the digital innovation agenda.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Jan 2024</span>
-      <a href="https://informante.web.na/?p=353378" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media6.png" alt="Dr. Audrin Mathe on New Era couch">
-    <div class="media-tag">Spotlight</div>
-  </div>
-  <div class="media-info">
-    <h3>On the Spot with Dr Audrin Mathe</h3>
-    <p>An in-depth interview on leadership, legacy, and national direction.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Apr 2023</span>
-      <a href="https://neweralive.na/on-the-spot-with-dr-audrin-mathe/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media7.png" alt="Team discussion in office with Dr. Mathe">
-    <div class="media-tag">Policy</div>
-  </div>
-  <div class="media-info">
-    <h3>Govt to address communications shortcomings</h3>
-    <p>Efforts underway to improve government messaging and communication capacity.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Aug 2022</span>
-      <a href="https://neweralive.na/govt-to-address-communications-shortcomings/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media8.png" alt="Dr. Mathe standing at table in smart-casual suit">
-    <div class="media-tag">Leadership</div>
-  </div>
-  <div class="media-info">
-    <h3>No room for tribalists – Mathe</h3>
-    <p>Dr. Mathe emphasizes unity and inclusion in public discourse and leadership.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> May 2023</span>
-      <a href="https://neweralive.na/no-room-for-tribalists-mathe/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media9.png" alt="Dr. Mathe speaking at podium in Oshikoto">
-    <div class="media-tag">Event</div>
-  </div>
-  <div class="media-info">
-    <h3>Oshikoto to host Heroes Day</h3>
-    <p>Preparations for the national commemoration event led by the Ministry.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> July 2023</span>
-      <a href="https://www.namibian.com.na/oshikoto-to-host-heroes-day/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-
-   <div class="media-card">
-  <div class="media-img">
-    <img src="./images/media10.png" alt="Dr. Mathe meeting with regional staff at office table">
-    <div class="media-tag">Engagement</div>
-  </div>
-  <div class="media-info">
-    <h3>Mathe engages regional office staff</h3>
-    <p>Dr. Mathe leads staff dialogue across regional offices to reinforce coordination and communication goals.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Oct 2022</span>
-      <a href="https://neweralive.na/mathe-engages-regional-office-staff/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media11.png" alt="Portrait of Dr. Mathe">
-    <div class="media-tag">Op-Ed</div>
-  </div>
-  <div class="media-info">
-    <h3>Govt must communicate proactively – Mathe</h3>
-    <p>Mathe urges leaders to embrace proactive, strategic communication in a digital era of instant accountability.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Nov 2022</span>
-      <a href="https://neweralive.na/govt-must-communicate-proactively-mathe/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media12.png" alt="Group photo with Dr. Mathe and officials">
-    <div class="media-tag">Policy</div>
-  </div>
-  <div class="media-info">
-    <h3>Mathe: High data fees inhibit growth</h3>
-    <p>Speaking on digital economy development, Dr. Mathe calls for data pricing reforms to boost inclusion.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Oct 2023</span>
-      <a href="https://neweralive.na/mathe-high-data-fees-inhibit-growth/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media13.png" alt="Dr. Mathe speaking at a podium with microphone">
-    <div class="media-tag">Speech</div>
-  </div>
-  <div class="media-info">
-    <h3>Mathe says media, govt not enemies</h3>
-    <p>At a public forum, Dr. Mathe urged for a healthy relationship between media and government built on mutual trust.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Oct 2022</span>
-      <a href="https://neweralive.na/mathe-says-media-govt-not-enemies/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media14.png" alt="Dr. Mathe seated at a conference table with headphones">
-    <div class="media-tag">Forum</div>
-  </div>
-  <div class="media-info">
-    <h3>Information ED advocates for information as a public good at Global Freedom Festival</h3>
-    <p>Dr. Mathe promotes the democratization of information during a global discourse on freedom and inclusion.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Oct 2023</span>
-      <a href="https://informante.web.na/?p=350795" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media15.png" alt="Portraits of Amupala and Dr. Mathe">
-    <div class="media-tag">Leadership</div>
-  </div>
-  <div class="media-info">
-    <h3>Scouts elect Amupala as new Chief Scout, confirm Mathe as President</h3>
-    <p>In a historic shift, Amupala assumes the role of Chief Scout while Dr. Mathe is confirmed as National President.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Nov 2022</span>
-      <a href="https://economist.com.na/74775/community-and-culture/scouts-elect-amupala-as-new-chief-scout-confirm-mathe-as-president/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media16.png" alt="Dr. Mathe in a suit discussing media and elections">
-    <div class="media-tag">Public Engagement</div>
-  </div>
-  <div class="media-info">
-    <h3>The media’s role in the upcoming elections</h3>
-    <p>Dr. Mathe emphasizes the importance of responsible journalism and media transparency during election season.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Oct 2024</span>
-      <a href="https://www.namibian.com.na/the-medias-role-in-the-upcoming-elections/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-  
-</div>
-
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media15.png" alt="Portraits of Amupala and Dr. Mathe">
-    <div class="media-tag">Leadership</div>
-  </div>
-  <div class="media-info">
-    <h3>Scouts elect Amupala as new Chief Scout, confirm Mathe as President</h3>
-    <p>In a historic shift, Amupala assumes the role of Chief Scout while Dr. Mathe is confirmed as National President.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Nov 2022</span>
-      <a href="https://economist.com.na/74775/community-and-culture/scouts-elect-amupala-as-new-chief-scout-confirm-mathe-as-president/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-<div class="media-card">
-  <div class="media-img">
-    <img src="./images/media15.png" alt="Portraits of Amupala and Dr. Mathe">
-    <div class="media-tag">Leadership</div>
-  </div>
-  <div class="media-info">
-    <h3>Scouts elect Amupala as new Chief Scout, confirm Mathe as President</h3>
-    <p>In a historic shift, Amupala assumes the role of Chief Scout while Dr. Mathe is confirmed as National President.</p>
-    <div class="media-meta">
-      <span class="media-date"><i class="fas fa-calendar-alt"></i> Nov 2022</span>
-      <a href="https://economist.com.na/74775/community-and-culture/scouts-elect-amupala-as-new-chief-scout-confirm-mathe-as-president/" class="media-link" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-    </div> <!-- End media-grid -->
-  </div> <!-- End container -->
-</section>
-
-<section class="videos-section" id="videos">
-  <div class="videos-dynamic-bg">
-    <div class="video-orb orb1"></div>
-    <div class="video-orb orb2"></div>
-    <div class="video-orb orb3"></div>
-  </div>
-
-  <div class="container">
-    <div class="section-header">
-      <h2>Video Features</h2>
-      <div class="accent-line" style="margin-left: 0;"></div>
-      <p class="section-subtitle">Key speeches, interviews, and insights from Dr. Mathe's public journey.</p>
-    </div>
-
-    <div class="videos-grid">
-      <div class="video-glass-card">
-        <div class="video-thumb">
-          <iframe src="https://www.youtube.com/embed/2tq2AW5fcSE" title="Supreme Court Ruling" allowfullscreen></iframe>
-        </div>
-        <div class="video-details">
-          <span class="video-tag">NBC Interview</span>
-          <h3>Dr Audrin Mathe on Supreme Court Ruling</h3>
-          <p>Critical analysis of the landmark Supreme Court decision and its implications for civil liberties.</p>
-          <a class="video-watch-btn" href="https://www.youtube.com/watch?v=2tq2AW5fcSE" target="_blank">▶ Watch</a>
-        </div>
+  <div class="hero-intro">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">MEDIA UPDATES.</h1>
+        <div class="accent-line1"></div>
+        <p class="hero-description" style="color: white;">
+          Explore the latest highlights in Namibia’s digital transformation, cybersecurity, and government communication.<br><br>
+          From strategies protecting children online to national funding models and leadership interviews, this section showcases impactful initiatives shaping the future of tech and governance.
+        </p>
       </div>
-
-      <div class="video-glass-card">
-        <div class="video-thumb">
-          <iframe src="https://www.youtube.com/embed/kimKxYWrcEs" title="Journalistic Integrity" allowfullscreen></iframe>
-        </div>
-        <div class="video-details">
-          <span class="video-tag">Talk</span>
-          <h3>Journalistic Integrity</h3>
-          <p>Exploring the role of journalism in national integrity and public perception.</p>
-          <a class="video-watch-btn" href="https://www.youtube.com/watch?v=kimKxYWrcEs" target="_blank">▶ Watch</a>
-        </div>
-      </div>
-
-      <div class="video-glass-card">
-        <div class="video-thumb">
-          <iframe src="https://www.youtube.com/embed/u9BbL1Ov6-Y" title="Heroes Commemoration" allowfullscreen></iframe>
-        </div>
-        <div class="video-details">
-          <span class="video-tag">Speech</span>
-          <h3>Heroes Commemoration</h3>
-          <p>A moving tribute to Namibia’s heroes at the national commemorative event.</p>
-          <a class="video-watch-btn" href="https://www.youtube.com/watch?v=u9BbL1Ov6-Y" target="_blank">▶ Watch</a>
-        </div>
-      </div>
-
-      <div class="video-glass-card">
-        <div class="video-thumb">
-          <iframe src="https://www.youtube.com/embed/dUYSlW1ahqs" title="Presidential Funeral" allowfullscreen></iframe>
-        </div>
-        <div class="video-details">
-          <span class="video-tag">National Ceremony</span>
-          <h3>Presidential Funeral</h3>
-          <p>Dr. Mathe reflects on leadership and legacy during this state occasion.</p>
-          <a class="video-watch-btn" href="https://www.youtube.com/watch?v=dUYSlW1ahqs" target="_blank">▶ Watch</a>
-        </div>
-      </div>
-
-      <div class="video-glass-card">
-        <div class="video-thumb">
-          <iframe src="https://www.youtube.com/embed/tu4znQlvDjw" title="Memorial Reflections" allowfullscreen></iframe>
-        </div>
-        <div class="video-details">
-          <span class="video-tag">Reflection</span>
-          <h3>Memorial Reflections</h3>
-          <p>Emotional and powerful perspectives shared in remembrance.</p>
-          <a class="video-watch-btn" href="https://www.youtube.com/watch?v=tu4znQlvDjw" target="_blank">▶ Watch</a>
-        </div>
-      </div>
-
-      <div class="video-glass-card">
-        <div class="video-thumb">
-          <iframe src="https://www.youtube.com/embed/sTx-uC2yr8k" title="Media Barometer Report" allowfullscreen></iframe>
-        </div>
-        <div class="video-details">
-          <span class="video-tag">Report</span>
-          <h3>Media Barometer Report</h3>
-          <p>Insight into Namibian media transparency and public discourse.</p>
-          <a class="video-watch-btn" href="https://www.youtube.com/watch?v=sTx-uC2yr8k" target="_blank">▶ Watch</a>
-        </div>
+      <div class="hero-image">
+        <img src="./images/about3.png" alt="Media Profile" />
+        <div class="image-overlay"></div>
       </div>
     </div>
+  </div>
+
+  <!-- Media Grid -->
+  <div class="media-grid">
+    <!-- Media Items -->
+    <div class="media-item left">
+      <div class="media-visual">
+        <img src="./images/media1.png" alt="Namibia’s cyber strategy focuses on children" />
+      </div>
+      <div class="media-content">
+        <h3 class="media-title">Namibia’s cyber strategy focuses on children</h3>
+        <a class="read-more-btn" href="#">READ MORE</a>
+      </div>
+   
+    </div>
+
+    <div class="media-item right">
+      <div class="media-visual">
+        <img src="./images/media2.png" alt="Digitisation dream" />
+      </div>
+      <div class="media-content">
+        <h3 class="media-title">N$100 mil digitisation dream gains momentum</h3>
+        <a class="read-more-btn" href="#">READ MORE</a>
+      </div>
+    </div>
+
+    <div class="media-item left">
+      <div class="media-visual">
+        <img src="./images/media3.png" alt="NBC sustainable funding model" />
+      </div>
+      <div class="media-content">
+        <h3 class="media-title">NBC needs to figure out a sustainable funding model</h3>
+        <a class="read-more-btn" href="#">READ MORE</a>
+      </div>
+    </div>
+
+    <div class="media-item right">
+      <div class="media-visual">
+        <img src="./images/media4.png" alt="Cyber resilience" />
+      </div>
+      <div class="media-content">
+        <h3 class="media-title">Information Ministry vows cyber resilience</h3>
+        <a class="read-more-btn" href="#">READ MORE</a>
+      </div>
+    </div>
+
+    <div class="media-item left">
+      <div class="media-visual">
+        <img src="./images/media5.png" alt="Digital transformation Namibia" />
+      </div>
+      <div class="media-content">
+        <h3 class="media-title">Namibia focuses on digital transformation</h3>
+        <a class="read-more-btn" href="#">READ MORE</a>
+      </div>
+    </div>
+
+    <div class="media-item right">
+      <div class="media-visual">
+        <img src="./images/media6.png" alt="On the Spot with Dr Audrin Mathe" />
+      </div>
+      <div class="media-content">
+        <h3 class="media-title">On the Spot with Dr Audrin Mathe</h3>
+        <a class="read-more-btn" href="#">READ MORE</a>
+      </div>
+    </div>
+
+    <!-- Continue similarly for additional screenshots if you have more -->
   </div>
 </section>
 
-<section class="publications-section" id="publications" data-section="publications">
-  <div class="publications-bubble-bg">
-    <div class="bubble b1"></div>
-    <div class="bubble b2"></div>
-    <div class="bubble b3"></div>
+<section class="video-section" id="video-section" data-section="video-section" style="margin-top: -50px;">
+  <!-- Decorative Circle -->
+  <div class="decorative-circle" style="
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #ffaa44;
+    border-radius: 50%;
+    top: -80px;
+    left: -80px;
+    z-index: 0;
+    opacity: 0.9;
+    pointer-events: none;
+  "></div>
+
+  <!-- Section Title -->
+  <div class="video-intro">
+    <h2 class="video-title">FEATURED VIDEOS</h2>
+    <div class="accent-line2"></div>
+    <p class="video-description">
+      A curated selection of impactful interviews, thought leadership, and digital transformation journeys. Watch and engage with Namibia’s most inspiring voices.
+    </p>
   </div>
 
-  <div class="container">
-    <div class="section-header">
-      <h2>Publications</h2>
-      <div class="accent-line" style="margin-left: -20px;"></div>
-      <p class="section-subtitle" style="color: white;">Dive into Dr. Mathe's thought-provoking work on governance, law, and policy.</p>
+  <!-- Video Grid -->
+  <div class="video-grid">
+    <!-- Video 1 -->
+    <div class="video-item reveal-fade">
+      <iframe src="https://www.youtube.com/embed/2tq2AW5fcSE" title="Video 1" allowfullscreen></iframe>
     </div>
 
-    <div class="publications-gallery">
-      <a class="pub-card" href="https://audrinmathe.com/downloads/Thirty%20Years%20on%20Accountable%20Govt.pdf" download>
-        <div class="pub-icon"><i class="fas fa-file-pdf"></i></div>
-        <h3>Thirty Years on Accountable Govt</h3>
-        <p class="pub-meta">📄 Research Paper · 2023</p>
-        <div class="pub-download">Download <i class="fas fa-download"></i></div>
-      </a>
+    <!-- Video 2 -->
+    <div class="video-item reveal-fade">
+      <iframe src="https://www.youtube.com/embed/kimKxYWrcEs" title="Video 2" allowfullscreen></iframe>
+    </div>
 
-      <a class="pub-card" href="https://audrinmathe.com/downloads/2023%20Parliamentary%20Rhetoric%20and%20Public%20Competence.pdf" download>
-        <div class="pub-icon"><i class="fas fa-file-pdf"></i></div>
-        <h3>Parliamentary Rhetoric and Public Competence</h3>
-        <p class="pub-meta">🧠 Policy Analysis · 2023</p>
-        <div class="pub-download">Download <i class="fas fa-download"></i></div>
-      </a>
+    <!-- Video 3 -->
+    <div class="video-item reveal-fade">
+      <iframe src="https://www.youtube.com/embed/u9BbL1Ov6-Y" title="Video 3" allowfullscreen></iframe>
+    </div>
 
-      <a class="pub-card" href="https://audrinmathe.com/downloads/Accountability%20of%20Members%20of%20Parliament.pdf" download>
-        <div class="pub-icon"><i class="fas fa-file-pdf"></i></div>
-        <h3>Accountability of Members of Parliament</h3>
-        <p class="pub-meta">📄 Research Paper · 2022</p>
-        <div class="pub-download">Download <i class="fas fa-download"></i></div>
-      </a>
+    <!-- Video 4 -->
+    <div class="video-item reveal-fade">
+      <iframe src="https://www.youtube.com/embed/dUYSlW1ahqs" title="Video 4" allowfullscreen></iframe>
+    </div>
 
-      <a class="pub-card" href="https://audrinmathe.com/downloads/An%20History%20of%20Presidential%20Immunity%20in%20Namibia.pdf" download>
-        <div class="pub-icon"><i class="fas fa-file-pdf"></i></div>
-        <h3>An History of Presidential Immunity in Namibia</h3>
-        <p class="pub-meta">📘 Case Study · 2022</p>
-        <div class="pub-download">Download <i class="fas fa-download"></i></div>
-      </a>
+    <!-- Video 5 -->
+    <div class="video-item reveal-fade">
+      <iframe src="https://www.youtube.com/embed/tu4znQlvDjw" title="Video 5" allowfullscreen></iframe>
+    </div>
 
-        <a class="pub-card" href="https://audrinmathe.com/downloads/An%20History%20of%20Presidential%20Immunity%20in%20Namibia.pdf" download>
-        <div class="pub-icon"><i class="fas fa-file-pdf"></i></div>
-        <h3>An History of Presidential Immunity in Namibia</h3>
-        <p class="pub-meta">📘 Case Study · 2022</p>
-        <div class="pub-download">Download <i class="fas fa-download"></i></div>
-      </a>
-
-        <a class="pub-card" href="https://audrinmathe.com/downloads/An%20History%20of%20Presidential%20Immunity%20in%20Namibia.pdf" download>
-        <div class="pub-icon"><i class="fas fa-file-pdf"></i></div>
-        <h3>An History of Presidential Immunity in Namibia</h3>
-        <p class="pub-meta">📘 Case Study · 2022</p>
-        <div class="pub-download">Download <i class="fas fa-download"></i></div>
-      </a>
-
-        <a class="pub-card" href="https://audrinmathe.com/downloads/An%20History%20of%20Presidential%20Immunity%20in%20Namibia.pdf" download>
-        <div class="pub-icon"><i class="fas fa-file-pdf"></i></div>
-        <h3>An History of Presidential Immunity in Namibia</h3>
-        <p class="pub-meta">📘 Case Study · 2022</p>
-        <div class="pub-download">Download <i class="fas fa-download"></i></div>
-      </a>
-
-        <a class="pub-card" href="https://audrinmathe.com/downloads/An%20History%20of%20Presidential%20Immunity%20in%20Namibia.pdf" download>
-        <div class="pub-icon"><i class="fas fa-file-pdf"></i></div>
-        <h3>An History of Presidential Immunity in Namibia</h3>
-        <p class="pub-meta">📘 Case Study · 2022</p>
-        <div class="pub-download">Download <i class="fas fa-download"></i></div>
-      </a>
+    <!-- Video 6 -->
+    <div class="video-item reveal-fade">
+      <iframe src="https://www.youtube.com/embed/sTx-uC2yr8k" title="Video 6" allowfullscreen></iframe>
     </div>
   </div>
 </section>
+<section class="publications-section" id="publications-section" data-section="publications-section">
+  <!-- Decorative Circles -->
+  <div class="decorative-circle" style="
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border: 10px solid #ffaa44;
+    border-radius: 50%;
+    top: -80px;
+    right: -80px;
+    z-index: 0;
+    opacity: 0.9;
+    pointer-events: none;
+  "></div>
 
- <section class="gallery-section" id="gallery">
-        <div class="floating-shapes">
-            <div class="shape"></div>
-            <div class="shape"></div>
-            <div class="shape"></div>
-        </div>
-        
-        <div class="container">
-            <div class="section-header">
-                <h2>Gallery</h2>
-                <div class="accent-line" style="margin-left: -30px;"></div>
-                <p class="section-subtitle"  style="color: white">Moments from Dr. Mathe's global, academic, and leadership engagements.</p>
-            </div>
-            
-            <div class="gallery-controls">
-                <div class="gallery-filter">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="academic">Academic</button>
-                    <button class="filter-btn" data-filter="leadership">Leadership</button>
-                    <button class="filter-btn" data-filter="global">Global</button>
-                </div>
-                <div class="view-toggle">
-                    <button class="view-btn active" data-view="grid">
-                        <i class="fas fa-th"></i>
-                    </button>
-                    <button class="view-btn" data-view="masonry">
-                        <i class="fas fa-columns"></i>
-                    </button>
-                </div>
-            </div>
+  <div class="pub-profile">
+    <div class="pub-profile-image">
+      <img src="./images/publication.jpg" alt="Dr. Audrin Mathe" />
+    </div>
+   <div class="pub-profile-text">
+  <h2 class="pub-name">Thought-Provoking Publications</h2>
+  <div class="accent-line2" style="margin-left: 0;"></div>
+  <p class="pub-bio">
+    Dive into a compelling library of reflections, keynote writings, political insights, and constitutional interpretations. These published works explore Namibia’s democratic growth, legal milestones, and evolving public discourse—offering timeless perspectives for current and future generations.
+  </p>
+</div>
 
-            <div class="gallery-grid">
-                <div class="gallery-item" data-category="global academic">
-                    <div class="item-inner">
-                        <div class="image-container">
-                            <img src="./images/dr.png" alt="Hong Kong Conference">
-                            <div class="gradient-overlay"></div>
-                        </div>
-                        <div class="item-content">
-                            <h3 class="item-title">International Conference</h3>
-                            <p class="item-description">Hong Kong, 2023</p>
-                            <div class="item-meta">
-                                <span class="location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Hong Kong
-                                </span>
-                                <span class="category-tag">Global</span>
-                            </div>
-                        </div>
-                        <button class="expand-btn">
-                            <i class="fas fa-expand"></i>
-                        </button>
-                    </div>
-                </div>
+  </div>
 
-                <div class="gallery-item" data-category="academic">
-                    <div class="item-inner">
-                        <div class="image-container">
-                            <img src="./images/about.png" alt="Research Archive">
-                            <div class="gradient-overlay"></div>
-                        </div>
-                        <div class="item-content">
-                            <h3 class="item-title">Research Archive</h3>
-                            <p class="item-description">National Library, 2022</p>
-                            <div class="item-meta">
-                                <span class="location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Windhoek
-                                </span>
-                                <span class="category-tag">Academic</span>
-                            </div>
-                        </div>
-                        <button class="expand-btn">
-                            <i class="fas fa-expand"></i>
-                        </button>
-                    </div>
-                </div>
+  <!-- Publications List -->
+  <div class="publication-list">
+    <div class="publication-entry">
+      <span class="pub-icon">📥</span>
+      <span class="pub-title">Thirty Years on Accountable Govt</span>
+      <div class="pub-actions">
+        <a class="pub-btn" href="#">Read More</a>
+        <a class="pub-btn alt" href="#">Download</a>
+      </div>
+    </div>
 
-                <div class="gallery-item featured" data-category="leadership">
-                    <div class="item-inner">
-                        <div class="image-container">
-                            <img src="./images/dr.png" alt="Keynote Address">
-                            <div class="gradient-overlay"></div>
-                        </div>
-                        <div class="item-content">
-                            <h3 class="item-title">Keynote Address</h3>
-                            <p class="item-description">Policy Conference, 2023</p>
-                            <div class="item-meta">
-                                <span class="location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Johannesburg
-                                </span>
-                                <span class="category-tag">Leadership</span>
-                            </div>
-                        </div>
-                        <button class="expand-btn">
-                            <i class="fas fa-expand"></i>
-                        </button>
-                    </div>
-                </div>
+    <div class="publication-entry">
+      <span class="pub-icon">📥</span>
+      <span class="pub-title">2023 Parliamentary Rhetoric and Public Competence</span>
+      <div class="pub-actions">
+        <a class="pub-btn" href="#">Read More</a>
+        <a class="pub-btn alt" href="#">Download</a>
+      </div>
+    </div>
 
-                <div class="gallery-item" data-category="leadership global">
-                    <div class="item-inner">
-                        <div class="image-container">
-                            <img src="./images/dr.png" alt="Diplomatic Meeting">
-                            <div class="gradient-overlay"></div>
-                        </div>
-                        <div class="item-content">
-                            <h3 class="item-title">Diplomatic Meeting</h3>
-                            <p class="item-description">Presidential Summit, 2022</p>
-                            <div class="item-meta">
-                                <span class="location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Windhoek
-                                </span>
-                                <span class="category-tag">Leadership</span>
-                            </div>
-                        </div>
-                        <button class="expand-btn">
-                            <i class="fas fa-expand"></i>
-                        </button>
-                    </div>
-                </div>
+    <div class="publication-entry">
+      <span class="pub-icon">📥</span>
+      <span class="pub-title">Accountability of Members of Parliament</span>
+      <div class="pub-actions">
+        <a class="pub-btn" href="#">Read More</a>
+        <a class="pub-btn alt" href="#">Download</a>
+      </div>
+    </div>
 
-                <div class="gallery-item" data-category="academic leadership">
-                    <div class="item-inner">
-                        <div class="image-container">
-                            <img src="./images/dr.png" alt="Governance Forum">
-                            <div class="gradient-overlay"></div>
-                        </div>
-                        <div class="item-content">
-                            <h3 class="item-title">Governance Forum</h3>
-                            <p class="item-description">UN Symposium, 2023</p>
-                            <div class="item-meta">
-                                <span class="location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Geneva
-                                </span>
-                                <span class="category-tag">Academic</span>
-                            </div>
-                        </div>
-                        <button class="expand-btn">
-                            <i class="fas fa-expand"></i>
-                        </button>
-                    </div>
-                </div>
+    <div class="publication-entry">
+      <span class="pub-icon">📥</span>
+      <span class="pub-title">An History of Presidential Immunity in Namibia</span>
+      <div class="pub-actions">
+        <a class="pub-btn" href="#">Read More</a>
+        <a class="pub-btn alt" href="#">Download</a>
+      </div>
+    </div>
 
-                <div class="gallery-item" data-category="global academic">
-                    <div class="item-inner">
-                        <div class="image-container">
-                            <img src="./images/dr.png" alt="Panel Discussion">
-                            <div class="gradient-overlay"></div>
-                        </div>
-                        <div class="item-content">
-                            <h3 class="item-title">Panel Discussion</h3>
-                            <p class="item-description">International Law Symposium, 2022</p>
-                            <div class="item-meta">
-                                <span class="location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    London
-                                </span>
-                                <span class="category-tag">Global</span>
-                            </div>
-                        </div>
-                        <button class="expand-btn">
-                            <i class="fas fa-expand"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="publication-entry">
+      <span class="pub-icon">📥</span>
+      <span class="pub-title">China–Namibia Dialogue</span>
+      <div class="pub-actions">
+        <a class="pub-btn" href="#">Read More</a>
+        <a class="pub-btn alt" href="#">Download</a>
+      </div>
+    </div>
+
+    <div class="publication-entry">
+      <span class="pub-icon">📥</span>
+      <span class="pub-title">Hamutenya's Constitutional Anecdots</span>
+      <div class="pub-actions">
+        <a class="pub-btn" href="#">Read More</a>
+        <a class="pub-btn alt" href="#">Download</a>
+      </div>
+    </div>
+
+    <div class="publication-entry">
+      <span class="pub-icon">📥</span>
+      <span class="pub-title">Timeless Welcoming Remarks</span>
+      <div class="pub-actions">
+        <a class="pub-btn" href="#">Read More</a>
+        <a class="pub-btn alt" href="#">Download</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Left Circle -->
+  <div class="decorative-circle" style="
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border: 10px solid #ffaa44;
+    border-radius: 50%;
+    bottom: -80px;
+    left: -80px;
+    z-index: 0;
+    opacity: 0.9;
+    pointer-events: none;
+  "></div>
+</section>
+<section class="gallery-section" id="gallery-section" data-section="gallery-section">
+  <!-- Decorative Circle -->
+  <div class="decorative-circle" style="
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 10px solid #ffaa44;
+    border-radius: 50%;
+    top: -90px;
+    left: -90px;
+    z-index: 0;
+    opacity: 0.8;
+    pointer-events: none;
+  "></div>
+
+  <!-- Title -->
+  <div class="gallery-header">
+    <h2 class="gallery-title">GALLERY SNAPSHOTS</h2>
+    <div class="accent-line2"></div>
+    <p class="gallery-description">
+      A visual journey through landmark events, impactful engagements, and moments of national inspiration. Browse memories that reflect Namibia’s growth, leadership, and transformation in action.
+    </p>
+  </div>
+
+  <!-- Grid -->
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="./images/about.png" alt="Gallery 1" /></div>
+    <div class="gallery-item tall"><img src="./images/media1.png" alt="Gallery 2" /></div>
+    <div class="gallery-item wide"><img src="./images/media11.png" alt="Gallery 3" /></div>
+    <div class="gallery-item"><img src="./images/media12.png" alt="Gallery 4" /></div>
+    <div class="gallery-item"><img src="./images/media13.png" alt="Gallery 5" /></div>
+    <div class="gallery-item"><img src="./images/media14.png" alt="Gallery 6" /></div>
+    <div class="gallery-item wide"><img src="./images/media16.png" alt="Gallery 7" /></div>
+      <div class="gallery-item wide"><img src="./images/media15.png" alt="Gallery 8" /></div>
+   
+  </div>
+</section>
+
 
 <section class="contact-section" id="contact" data-section="contact">
   <div class="section-header">
@@ -814,7 +560,7 @@
     <!-- Left side with image and contact info -->
     <div class="contact-left">
       <div class="contact-image-frame">
-        <img src="./images/about1.png" alt="Dr. Audrin Mathe" />
+        <img src="./images/talk.jpg" alt="Dr. Audrin Mathe" />
         <div class="image-overlay"></div>
       </div>
       <ul class="contact-details">
@@ -874,10 +620,10 @@
       <ul>
     <li><a href="#home" class="nav-link">Home</a></li>
 <li><a href="#about" class="nav-link">About</a></li>
-<li><a href="#media" class="nav-link">Media</a></li>
-<li><a href="#videos" class="nav-link">Videos</a></li>
-<li><a href="#publications" class="nav-link">Publications</a></li>
-<li><a href="#gallery" class="nav-link">Gallery</a></li>
+<li><a href="#media-section" class="nav-link">Media</a></li>
+<li><a href="#video-section" class="nav-link">Videos</a></li>
+<li><a href="#publications-section" class="nav-link">Publications</a></li>
+<li><a href="#gallery-section" class="nav-link">Gallery</a></li>
 <li><a href="#contact" class="nav-link">Contact</a></li>
 
       </ul>
@@ -1179,6 +925,39 @@ expandBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.stopPropagation();
         console.log('Expand clicked');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const sidebar = document.querySelector('.story-sidebar');
+  const mediaSection = document.querySelector('.media-section');
+
+  const observerOptions = {
+    root: null,
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        sidebar.classList.remove('hidden');
+      } else {
+        sidebar.classList.add('hidden');
+      }
+    });
+  }, observerOptions);
+
+  observer.observe(mediaSection);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(".nav-menu li a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
     });
 });
 
